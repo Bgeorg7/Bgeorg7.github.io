@@ -120,3 +120,33 @@ h3 {
 .theme-toggle:hover {
     opacity: 0.8;
 }
+
+/* --- ESTILOS PARA LAS IMÁGENES --- */
+
+/* Imagen del Semillero (Banner superior) */
+.banner-img {
+    width: 100%; /* Ocupa casi de margen a margen del contenedor */
+    height: 250px; /* Altura fija para que no sea excesivamente grande */
+    object-fit: cover; /* Recorta la imagen bonito si las proporciones no cuadran */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Tu foto de perfil (Sobre Mí) */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%; /* La hace completamente circular */
+    float: left; /* Hace que el texto se acomode a la derecha de la foto */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 3px solid var(--primary-color); /* Un borde del color de tu tema */
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
