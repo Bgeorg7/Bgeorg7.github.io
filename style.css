@@ -130,10 +130,11 @@ h3 {
 
 .banner-img {
     width: 100%;
-    max-height: 380px;
-    object-position: top; 
+    height: 420px; 
+    object-fit: cover;
+    object-position: 50% 12%;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .profile-img {
