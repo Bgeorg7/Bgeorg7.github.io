@@ -1,0 +1,122 @@
+/* Variables de color para facilidad */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333333;
+    --container-bg: #ffffff;
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --border-color: #dddddd;
+}
+
+/* Modo oscuro */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --container-bg: #1e1e1e;
+    --primary-color: #82aaff;
+    --accent-color: #c792ea;
+    --border-color: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.item p, .item ul {
+    margin: 0 0 10px 0;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+}
+
+/* Botón de Modo Oscuro */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
